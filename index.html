@@ -2,94 +2,245 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content="width-device-width, initial-width=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+
+  <!-- CSS and Fonts -->
   <link rel="stylesheet" href="stylesheet.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Typed.js Library -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Smooth Scrolling -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
+  <video autoplay muted loop id="bg-video">
+    <source src="c:\Users\adity\Downloads\12716-241674181_small.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Navbar -->
   <header class="header">
     <nav class="navbar">
-      <a href="#" class="logo">Portfolio</a>
+      <a href="#home" class="logo">Shiva Teja Kondeti</a>
       <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
-  <section class="home">
-    <div class="main-section">
-      <div class="text-content">
-        <h3>Hey hi, It's Me</h3>
-        <h2>Shivateja</h2>
-        <h3>And I'm a <span class="text"></span></h3>
-        <p>
-          <strong>Data Analyst</strong> and <strong>Frontend Developer</strong> with a passion for data, design, and clean code. I love transforming ideas into real, impactful solutions.
-        </p>
-        <div class="home-sci">
-          <a href="#"><i class='bx bxl-facebook'></i></a>
-          <a href="#"><i class='bx bxl-linkedin' ></i></a>
-          <a href="#"><i class='bx bxl-whatsapp' ></i></a>
-          <a href="#"><i class='bx bxl-github' ></i></a>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <div class="intro">
+        <h1>Hey I'm <span>Shiva</span></h1>
+        <h2>I'm a <span class="typing"></span></h2>
+        <p>I am a passionate Web Developer and Data Analyst dedicated to building responsive, intelligent, and interactive digital experiences.</p>
+        <div class="buttons">
+          <a href="#projects" class="btn">Explore My Projects</a>
+          <a href="#contact" class="btn">Let's Connect</a>
         </div>
-        <a href="#" class="bin-box">More About Me</a>
       </div>
+    </div>
+    <div class="home-img">
       <div class="profile-container">
-        <img src="C:\ShivaPortfolio\shiva30.jpg" alt="Shivateja" class="glow-img" />
-      </div>
-    </div>     
-  <spam class="home-imgHover"></spam>
-  </section>
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="C:\ShivaPortfolio\professional.jpg" alt="Shivateja" class="glow-img">
-    </div>
-    <div class="about-text">
-      <h2>About Me<span></span></h2>
-      <h4>Frontend Developer & Data Analyst</h4>
-      <p>
-        Hi! I'm <strong>Shivateja</strong>, a passionate <strong>Frontend Developer</strong> and <strong>Data Analyst</strong> who loves turning ideas into powerful and elegant web experiences.  
-        With strong skills in HTML, CSS, JavaScript, and data visualization tools, I enjoy blending creativity with technology.  
-        My goal is to create designs that not only look great but also solve real-world problems efficiently.  
-        Always eager to learn, explore, and build something impactful!
-      </p>
-      <a href="#" class="bin-box">More About Me</a>
-    </div>
-  </section>
-  <section class="services" id="services">
-    <div class="container">
-      <h1 class="sub-title">My <span>Services</span></h1>
-      <div class="services-list">
-        <div>
-          <i class="services"></i>
-          <h2>Power-Bi</h2>
-          <p>Power-Bi is the most trending hottest bussiness intelligence tool in most top mnc companies</p>
-          <a href="#" class="read">Learn More</a>
-        </div>
-        <div>
-          <i class="services"></i>
-          <h2>Sql</h2>
-          <p>SQL (Structured Query Language) is a standard programming language used to manage and manipulate relational databases.</p>
-          <a href="#" class="read">Learn More</a>
-        </div>
-        <div>
-          <i class="services"></i>
-          <h2>Html/Css/Javascript</h2>
-          <p>HTML (HyperText Markup Language) provides the basic structure of a web page using elements like headings, paragraphs, images, and links.
-            CSS (Cascading Style Sheets) is used to style and layout these elements by controlling aspects such as colors, fonts, spacing, and responsiveness.
-            JavaScript is a scripting language that adds interactivity and dynamic behavior to web pages, enabling responses to user actions like clicks and form inputs.
-            
-            Together, these three technologies form the foundation of modern web development.</p>
-          <a href="#" class="read">Learn More</a>
-        </div>
+        <img src="C:\Users\adity\Downloads\n6.png" alt="Shiva Teja" class="profile-pic">
       </div>
     </div>
-  <script src="main.js>"></script>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-container">
+      <div class="about-content">
+        <p>As a passionate developer, I specialize in bringing ideas to life through clean code and insightful data.
+          Whether I’m building stunning, 
+          responsive websites or transforming raw numbers into meaningful insights,
+          “I don't just code or analyze —
+          I build experiences that connect, inform, and inspire.”</p>
+        <div class="about-bottom">
+          <div class="about-right">
+            <div class="about-journey">
+              <h3>"Shaping My Future"</h3>
+              <p>I started my journey with a deep interest in how systems work.
+                That curiosity led me to learn programming, data science, and cloud tools.
+                Through internships, projects, and sleepless nights, I’ve grown into a confident developer.
+                The journey so far has been incredible — and it’s only the beginning.
+              </p>
+            </div>
+          </div>
+          <section class="milestones-section">
+            <h3>Key Milestones</h3>
+            <ul class="milestones-list">
+              <li><span class="year">2021</span>Started </li>
+              <li><span class="year">2022</span>Learning Basics Of C and Data Structures</li>
+              <li><span class="year">2023</span>Build My First Project Using Python and Exploring Java</li>
+              <li><span class="year">2024</span>Step into AI, ML, DL and Full Stack Development</li>
+              <li><span class="year">2025</span>Building The Real World Projects</li>
+            </ul>
+          </section>
+        </div>
+        <div class="quick-highlights">
+          <h3>🚀 Quick Highlights</h3>
+          <ul>
+            <li style="--i:1">🎓 B.Tech student in AI & DS at CBIT</li>
+            <li style="--i:2">💻 Passionate about AI, DS & WD</li>
+            <li style="--i:3">📊 Power BI Intern at CodTech IT Solutions</li>
+            <li style="--i:4">🔍 Learning Machine Learning & Cloud</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="skills-container">
+      <div class="skills-slider">
+
+        <!-- HTML -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        </div>
+
+        <!-- CSS -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        </div>
+
+        <!-- React -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        </div>
+
+        <!-- Python -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        </div>
+
+        <!-- Java -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        </div>
+
+        <!-- MongoDB -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+        </div>
+
+        <!-- Scikit-learn -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt="Scikit-learn">
+        </div>
+
+        <!-- GitHub -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        </div>
+
+        <!-- Power BI -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI">
+        </div>
+
+        <!-- SQL -->
+        <div class="skill"><div class="circle"></div>
+          <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" alt="SQL">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="Projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <div class="project-media">
+          <img src="C:\Users\adity\Downloads\villa1.jpeg" alt="Project 1">
+        </div>
+        <div class="project-content">
+          <h3>Real Estate Finder</h3>
+          <p>A web application to search properties with filters and dynamic pricing.</p>
+          <div class="tech-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <div class="project-media">
+          <img src="C:\Users\adity\Downloads\ai-generated-7770055_1280.jpg" alt="Project 2">
+        </div>
+        <div class="project-content">
+          <h3>AI Chatbot</h3>
+          <p>An AI-powered chatbot for answering queries in real-time.</p>
+          <div class="tech-stack">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="Contact">
+    <h2>Contact Me</h2>
+    <p class="contact-intro">I'm open to opportunities and collaborations. Let's connect!</p>
+    <form class="contact-form">
+      <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+      <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+      <div class="form-group"><input type="text" placeholder="Subject" required></div>
+      <div class="form-group"><textarea placeholder="Your Message" rows="5" required></textarea></div>
+      <button type="submit" class="btn-submit">Send Message 🚀</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Shiva. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/your-github" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </a>
+      <a href="https://twitter.com/your-twitter" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter">
+      </a>
+    </div>
+  </footer>
+
+  <!-- JavaScript Typing Animation -->
+  <script>
+    var typed = new Typed(".typing", {
+      strings: ["Web Developer", "Data Analyst", "Power Bi Developer","Tech Enthusiast"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
 </body>
-</html>
 </html>
