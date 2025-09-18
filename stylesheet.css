@@ -754,3 +754,15 @@ html {
     text-align: center;
   }
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* On small screens, reduce padding */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
