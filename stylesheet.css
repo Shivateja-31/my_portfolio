@@ -761,8 +761,9 @@ html {
 }
 
 /* On small screens, reduce padding */
-@media (max-width: 768px) {
-  .container {
-    padding: 10px;
+@media (max-width: 480px) {
+  .profile-pic {
+    width: 150px;
+    height: 150px;
   }
 }
